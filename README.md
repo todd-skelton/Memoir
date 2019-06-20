@@ -1,7 +1,7 @@
 [![](https://img.shields.io/nuget/v/Memoir.svg)](https://www.nuget.org/packages/Memoir) [![](https://img.shields.io/nuget/vpre/Memoir.svg)](https://www.nuget.org/packages/Memoir)
 
 # Memoir
-These extensions make it easy to chain Linq expressions based on conditions—useful for sorting, filtering, and paging.
+An opinionated event sourcing library.
 
 ## Installation
 ### Package Manager
