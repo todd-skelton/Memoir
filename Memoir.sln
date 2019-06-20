@@ -3,9 +3,62 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.28922.388
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Build", "Build", "{3F357DB0-20C3-4676-96F0-E0C82792E946}"
+	ProjectSection(SolutionItems) = preProject
+		Directory.Build.props = Directory.Build.props
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Source", "Source", "{602A9ECE-C191-4C39-9811-D559E1762DF5}"
+	ProjectSection(SolutionItems) = preProject
+		src\Directory.Build.props = src\Directory.Build.props
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Samples", "Samples", "{56ECD6DF-49CA-4AC1-80E9-C965C161F9D4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{97BF78D3-C84B-4F97-AB15-82DC93639227}"
+	ProjectSection(SolutionItems) = preProject
+		LICENSE = LICENSE
+		logo.png = logo.png
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Memoir.Abstractions", "src\Memoir.Abstractions\Memoir.Abstractions.csproj", "{699910DE-FE04-43E8-B3DE-2A4F9F433944}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Memoir", "src\Memoir\Memoir.csproj", "{C9DA2571-64A4-490A-9670-4ACF390AE74A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BankingApplication", "samples\BankingApplication\BankingApplication.csproj", "{8EBC729B-16BB-4223-93BB-8315BC79BABA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Memoir.SqlServer", "src\Memoir.SqlServer\Memoir.SqlServer.csproj", "{D7341A39-CDC2-4268-99CF-A71E940AB6F5}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{699910DE-FE04-43E8-B3DE-2A4F9F433944}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{699910DE-FE04-43E8-B3DE-2A4F9F433944}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{699910DE-FE04-43E8-B3DE-2A4F9F433944}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{699910DE-FE04-43E8-B3DE-2A4F9F433944}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9DA2571-64A4-490A-9670-4ACF390AE74A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9DA2571-64A4-490A-9670-4ACF390AE74A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9DA2571-64A4-490A-9670-4ACF390AE74A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9DA2571-64A4-490A-9670-4ACF390AE74A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8EBC729B-16BB-4223-93BB-8315BC79BABA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8EBC729B-16BB-4223-93BB-8315BC79BABA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8EBC729B-16BB-4223-93BB-8315BC79BABA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8EBC729B-16BB-4223-93BB-8315BC79BABA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7341A39-CDC2-4268-99CF-A71E940AB6F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7341A39-CDC2-4268-99CF-A71E940AB6F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7341A39-CDC2-4268-99CF-A71E940AB6F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7341A39-CDC2-4268-99CF-A71E940AB6F5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{602A9ECE-C191-4C39-9811-D559E1762DF5} = {3F357DB0-20C3-4676-96F0-E0C82792E946}
+		{8EBC729B-16BB-4223-93BB-8315BC79BABA} = {56ECD6DF-49CA-4AC1-80E9-C965C161F9D4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C86E33A9-5278-4324-B04B-B0B87F4F4983}

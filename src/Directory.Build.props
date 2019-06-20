@@ -1,0 +1,22 @@
+<Project>
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Version>0.0.1</Version>
+    <Authors>Todd Skelton</Authors>
+    <Company>Kloc Limited Company</Company>
+    <Product>Memoir</Product>
+    <Title>Memoir Event Sourcing Library</Title>
+    <PackageIconUrl>https://github.com/xKloc/Memoir/blob/master/logo.png?raw=true</PackageIconUrl>
+    <PackageProjectUrl>https://github.com/xKloc/Memoir</PackageProjectUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <RepositoryUrl>https://github.com/xKloc/Memoir</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>memoir, event, events, eventing, source, sourcing, immutable, store, storing, cqrs</PackageTags>
+    <PackageReleaseNotes></PackageReleaseNotes>
+  </PropertyGroup>
+
+  <Target Name="PushNuGetPackage" AfterTargets="GenerateNuspec" Condition="'$(Configuration)'=='Release'">
+    <Exec Command="C:\Nuget\NuGet.exe push -Source https://api.nuget.org/v3/index.json $(ProjectDir)bin\$(Configuration)\$(AssemblyName).$(Version).nupkg"></Exec>
+  </Target>
+</Project>

@@ -1,0 +1,19 @@
+﻿using Memoir;
+using System;
+
+namespace BankingApplication.Domain.Accounts.Events
+{
+    public class AccountOpened : IEvent<AccountState>
+    {
+        public AccountOpened(Guid customerId, string accountNumber, AccountType type)
+        {
+            CustomerId = customerId;
+            AccountNumber = accountNumber;
+            Type = type;
+        }
+
+        public Guid CustomerId { get; }
+        public string AccountNumber { get; }
+        public AccountType Type { get; }
+    }
+}
